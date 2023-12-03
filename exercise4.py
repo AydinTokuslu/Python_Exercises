@@ -6,3 +6,13 @@
 # dictionary below. Your function should return 3.
 # register = {'Michael':'yes','John': 'no',
 #  'Peter':'yes', 'Mary': 'yes'}
+
+def register_check(dict):
+    number_of_student = 0
+    for i in dict.values():
+        if i == 'yes':
+            number_of_student += 1
+    return number_of_student
+
+register = {'Michael': 'yes', 'John': 'no', 'Peter':'yes', 'Mary': 'yes'}
+print(register_check(register))
