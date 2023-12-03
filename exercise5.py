@@ -7,3 +7,13 @@
 # alphabetically in descending order. Using the list above, your
 # code should return: ('kerry', 'dickson', 'carol', 'adam')
 
+def lowercase_names(list):
+    lower_case = []
+    for i in list:
+        #if i == i.lower():
+        if i.islower():
+            lower_case.append(i)
+    return tuple(lower_case)
+
+names = ["kerry", "dickson", "John", "Mary", "carol", "Rose", "adam", "jameS", "aydin"]
+print(lowercase_names(names))
