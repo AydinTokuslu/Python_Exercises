@@ -11,13 +11,10 @@ def word_index(list):
     max = 0
     for i in list:
         if len(i) > max :
-            len(i) == max
+            max = len(i)
         #else:
             #return max
     return list.index(i)
-
-
-
 
 
 words1 = ["Hate", "remorse", "vengeance", "elvedaistanbul"]
