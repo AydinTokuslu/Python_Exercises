@@ -5,3 +5,18 @@
 # smallest odd number in the list. For example, if you pass
 # [1,2,4,6] as an argument the function should return 6 -1= 5.
 
+def odd_even(list):
+    max = 0
+    min = 1000
+    for i in list:
+        if i % 2 == 0:
+            if i > max:
+                max = i
+        else:
+            if i < min:
+                min = i
+    return f"{max} - {min} = {max - min}"
+
+
+x = [1,2,4,6,7,422,88]
+print(odd_even(x))
