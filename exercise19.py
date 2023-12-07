@@ -21,21 +21,17 @@ def convert_numbers(numbers):
     str_numbers_list2 = []
     for i in range(len(numbers)):
         b = numbers[i] % 1000
-        print(f"b = {b}")
         if b == 0:
             b = "1000"
         elif b < 100:
             b = "0" + str(b)
         numbers[i] = numbers[i] // 1000
-        print(f"numbers[i] = {numbers[i]}")
         c = numbers[i] % 1000
-        print(f"c = {c}")
         if c == 0:
             c = "000"
         elif c < 100:
             c = "0" + str(c)
         numbers[i] = numbers[i] // 1000
-        print(f"numbers[i] = {numbers[i]}")
         str_numbers_list = str(numbers[i])+", "+str(c)+", "+str(b)
         str_numbers_list2.append(str_numbers_list)
     print(str_numbers_list2)
