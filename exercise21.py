@@ -15,5 +15,5 @@ def swap_values(list):
     new_list[-1] = temp
     return new_list
 
-list = [2, 4,67, 7, 66]
+list = [2, 4, 67, 7, 66]
 print(swap_values(list))
