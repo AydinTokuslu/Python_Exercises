@@ -15,3 +15,20 @@
 # Periods: 105
 # Gross salary:2,125
 
+def your_salary():
+    name = input("please enter the teacher name : ")
+    number_of_periods = int(input("please enter the number of periods taught in a month : "))
+    #rate_per_period = int(input("please enter the rate per period in a month : "))
+    #gross_salary = 0
+    if number_of_periods > 100:
+        gross_salary = ((number_of_periods-100)*25 + 2000)
+    else:
+        gross_salary = (number_of_periods * 20)
+
+    gross_salary_x = gross_salary // 1000
+    gross_salary_y = gross_salary % 1000
+    gross_salary = str(gross_salary_x) + "," + str(gross_salary_y)
+    print("")
+    print(f"Teacher: {name},\nPeriods: {number_of_periods}\nGross salary: {gross_salary}")
+
+your_salary()
