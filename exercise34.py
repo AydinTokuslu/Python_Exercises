@@ -15,3 +15,18 @@
 #print(any_number(list))
 
 def any_number():
+    average = 0
+    sayi = int(input("how many numbers will you enter (to exit, press a) : "))
+    for i in range(sayi):
+        num = int(input(f"{i+1}. number : "))
+        average += num
+    average /= sayi
+    print(f"All the {sayi} numbers average is : {average}")
+
+any_number()
+
+
+
+
+
+
