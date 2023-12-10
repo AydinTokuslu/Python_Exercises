@@ -10,3 +10,4 @@
 # the count_words function should return 3 words and
 # count_elements should return 13 elements.
 
+def count_words():
