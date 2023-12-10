@@ -9,3 +9,18 @@
 
 # ['gninrAel', 'tUb', 'uoY', 'yLppa', 'flesRuoy', 'eVeihca']
 
+def reversed_list(str):
+    new_str = ""
+    for i in str.split(" "):
+        if i.islower():
+            continue
+        else:
+            new_str += i
+            new_str += " "
+
+    return new_str[::-1]
+
+
+str1="leArning is hard, bUt if You appLy youRself you can achieVe success"
+
+print(reversed_list(str1))
