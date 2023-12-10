@@ -10,4 +10,20 @@
 # the count_words function should return 3 words and
 # count_elements should return 13 elements.
 
-def count_words():
+def count_words(str):
+    count = 0
+    for i in str.split(" "):
+        count += 1
+    return f"{count} words"
+
+
+def count_elements(str):
+    count = 0
+    for i in str.split(" "):
+        count += len(i)
+    return f"{count} elements"
+
+
+x="I love learning"
+print(count_words(x))
+print(count_elements(x))
