@@ -9,3 +9,12 @@
 # numbers only. For example [1, 2, 4, 5, 6, 7, 8, 8] should
 # return [1, 2, 4, 5, 6, 7, 8, 8].
 
+def unique_numbers(x):
+    unique_list = []
+    not_unique_list = []
+    sum_unique_numbers = 0
+    sum_not_unique_numbers = 0
+    sum_total_numbers = 0
+    for i in x:
+        if i%2==0:
+
