@@ -3,3 +3,4 @@
 # lower letters in the string. For example, ‘LovE’ should return
 # [1,2].
 
+def index_position():
