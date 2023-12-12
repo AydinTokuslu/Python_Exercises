@@ -16,5 +16,21 @@ def unique_numbers(x):
     sum_not_unique_numbers = 0
     sum_total_numbers = 0
     for i in x:
-        if i%2==0:
+        sum_total_numbers += i
+        if i not in unique_list:
+            unique_list.append(i)
+            sum_unique_numbers += i
+        else:
+            not_unique_list.append(i)
+            sum_not_unique_numbers += i
+
+    difference = sum_total_numbers - sum_unique_numbers - sum_not_unique_numbers
+    if difference %2 == 0:
+        print(x)
+    else:
+        print(not_unique_list)
+
+
+list = [1, 2, 4, 5, 6, 7, 8, 8]
+unique_numbers(list)
 
