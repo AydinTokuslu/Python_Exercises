@@ -7,9 +7,21 @@
 def largest_number(list):
     number = ""
     max = 0
+    num_list = []
     for i in list:
-        number += str(i)
-    print(number)
+        if i % 2 == 0 or i % 2 == 1:
+            sayi1 = i // 10
+            sayi2 = i % 10
+            num_list.append(sayi1)
+            num_list.append(sayi2)
+        else:
+            num_list.append(i)
+    num_list = sorted(num_list)
+    for i in num_list[::-1]:
+        if i != 0:
+            number += str(i)
+    return number
+
 
 list1 = [3, 67, 87, 9, 2]
 print(largest_number(list1))
