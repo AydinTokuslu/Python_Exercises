@@ -5,3 +5,13 @@
 # that you sort and remove duplicates. For example ‘love life’
 # should return as ['e,f,i,l,o,v']
 
+def sort_words(str):
+    new_str = []
+    for i in str:
+        if i != " ":
+            if i not in new_str:
+                new_str.append(i)
+    return sorted(new_str)
+
+s = "love life"
+print(sort_words(s))
