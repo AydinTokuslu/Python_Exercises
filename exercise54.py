@@ -9,8 +9,10 @@
 
 def middle_figure(a,b):
     combined_string = ""
-    if len(a) != len(b):
-        print()
+    if len(a) > len(b):
+        print(a[-1])
+    elif len(b) > len(a):
+        print(b[0])
     else:
         print("no middle figure")
 
