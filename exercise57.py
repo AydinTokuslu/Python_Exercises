@@ -6,3 +6,15 @@
 # function should return
 # [10, JavaScript] as the longest word.
 
+def longest_word(list):
+    max = 0
+    max_word = ""
+    for i in list:
+        if len(i) > max:
+            max = len(i)
+            max_word = i
+    return f"{[max, max_word]}"
+
+
+x = ["Java", "JavaScript", "Python"]
+print(longest_word(x))
