@@ -15,3 +15,22 @@
 # function should keep running until the user enters correct
 # logging details.
 
+def create_user():
+    name = input("please enter your name: ")
+    age = input("please enter your age: ")
+    password = input("please enter your password: ")
+    user_list = {}
+    user_list["name"]=name
+    user_list["age"]=age
+    user_list["password"]=password
+    print("User saved. Please login")
+    while True:
+        name2 = input("please enter your name again : ")
+        password2 = input("please enter your passsword again : ")
+        if name2 in user_list.values() and password2 in user_list.values():
+            print("Logged in successfully")
+            break
+        else:
+            print("Wrong password or user name. Please try again")
+create_user()
+
