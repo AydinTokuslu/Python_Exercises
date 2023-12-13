@@ -14,6 +14,12 @@
 
 def sorted_names(list):
     new_list = []
+    list = sorted(list)
+    print(list)
+    for i in list:
+        new_list.append(i.split(" ")[1]+" "+i.split(" ")[0])
+    return sorted(new_list)
+
 
 names = ["Beyonce Knowles", "Alicia Keys", "Katie Perry", "Chris Brown","Tom Cruise"]
 print(sorted_names(names))
