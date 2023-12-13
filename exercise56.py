@@ -12,3 +12,9 @@
 # 'Knowles Beyonce']
 # Write a function called sorted_names.
 
+def sorted_names(list):
+    new_list = []
+
+names = ["Beyonce Knowles", "Alicia Keys", "Katie Perry", "Chris Brown","Tom Cruise"]
+print(sorted_names(names))
+
