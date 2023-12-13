@@ -12,8 +12,7 @@
 def password_validator():
     errors = []
     while True:
-        password = input("please enter your minimum 8 character password.\nPassword should have at least one upper letter, "
-                     "one lower letter, and one number")
+        password = input("please enter your minimum 8 character password: ")
         if len(password) < 8:
             print("Your password should be 8 characters")
         elif password.isdigit():
@@ -24,3 +23,5 @@ def password_validator():
             print("Your password should have at least one lower letter, one number")
         else:
             return f"Your password is : {password}"
+
+print(password_validator())
