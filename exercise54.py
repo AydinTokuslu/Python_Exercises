@@ -7,3 +7,14 @@
 # argument for b. Your function should return ‘e’ as the middle
 # element. Whitespaces should be removed.
 
+def middle_figure(a,b):
+    combined_string = ""
+    if len(a) != len(b):
+        print()
+    else:
+        print("no middle figure")
+
+
+str1 = "make love"
+str2 = "not wars"
+middle_figure(str1,str2)
