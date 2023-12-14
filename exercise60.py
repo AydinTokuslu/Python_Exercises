@@ -11,3 +11,19 @@
 # If no emails in the list are valid, the function should return ‘all emails are
 # invalid’
 
+def email_validator(list):
+    valid_emails = []
+    for i in list:
+        if i.startswith("@"):
+            continue
+        elif not i.endswith(".com"):
+            continue
+        else:
+            valid_emails.append(i)
+    if len(valid_emails) == 0:
+        print("all emails are invalid")
+    return valid_emails
+
+
+emails = ['ben@mail.com', 'john@mail.cm', 'kenny@gmail.com', '@list.com' ]
+print(email_validator(emails))
