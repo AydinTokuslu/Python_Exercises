@@ -16,9 +16,11 @@ def just_digits():
     digits = ""
     with open("python.csv", "r", encoding="utf-8") as file:
         files = file.readline()
+        files = files.split(" ")
         for i in files:
-             if i.isdigit():
-                 digits += i + " "
+            print(i)
+            if i.isdigit():
+                digits += i + ", "
         return digits
 
 print(just_digits())
