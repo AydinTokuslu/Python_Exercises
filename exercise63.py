@@ -12,14 +12,6 @@
 # and was a major revision of the language that is not
 # completely backward-compatible.”
 
-metin = "Python was released in 1991 for the first time. Python 2 was\n" \
-        " released in 2000 and introduced new features, such as list \n" \
-        "comprehensions and a cycle-detecting garbage collection system\n" \
-        " (in addition to reference counting). Python 3 was released in 2008\n" \
-        " and was a major revision of the language that is not\n" \
-        " completely backward-compatible."
-
-
 def just_digits():
     digits = []
     with open("python.csv", "r", encoding="utf-8") as file:
