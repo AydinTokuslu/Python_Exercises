@@ -5,3 +5,21 @@
 # following sentence is a pangram so it should return True:
 # 'the quick brown fox jumps over a lazy dog'
 
+def check_pangram(str):
+    letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u",
+               "v", "w", "x", "y", "z"]
+    str = str.replace(" ","")
+    pangram = []
+    for i in str:
+        if i not in pangram:
+            pangram.append(i)
+    pangram.sort()
+    #print(pangram)
+    if pangram == letters:
+        return True
+    else:
+        return False
+
+
+s = "the quick brown fox jumps over a lazy dog"
+print(check_pangram(s))
