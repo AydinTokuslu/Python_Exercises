@@ -13,15 +13,12 @@
 # completely backward-compatible.”
 
 def just_digits():
-    digits = []
+    digits = ""
     with open("python.csv", "r", encoding="utf-8") as file:
         files = file.readline()
         for i in files:
-            i = i.replace("\n", "")
-            i = i.split(" ")
-            for a in i:
-                if a.isdigit():
-                    digits += a + " "
-    return digits
+             if i.isdigit():
+                 digits += i + " "
+        return digits
 
 print(just_digits())
