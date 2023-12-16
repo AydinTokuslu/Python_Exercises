@@ -10,3 +10,21 @@
 # Your code should return:
 # iyay ovelay ythonpay
 
+def translate(str):
+    vowel = ["a", "e", "i", "o", "u"]
+    new_str = ""
+    str = str.split(" ")
+    for i in str:
+        if i[0] in vowel:
+            i += "yay"
+            new_str+=i+" "
+        else:
+            i = i[1::]+i[0]
+            print(i)
+            i += "ay"
+            new_str+=i+ " "
+    print(new_str)
+
+
+a = "i love python"
+print(translate(a))
