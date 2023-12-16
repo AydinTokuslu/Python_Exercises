@@ -14,3 +14,10 @@ def guess_a_number():
     random_num = randint(1,10)
     while guess <= 3:
         num = int(input("please enter a number : "))
+        guess += 1
+        if num > random_num:
+            print("please enter a lower number")
+        elif num < random_num:
+            print("please enter a higher number")
+        else:
+            print("congratulations, you won")
