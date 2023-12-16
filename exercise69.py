@@ -7,7 +7,10 @@
 
 def missing_numbers(list):
     new_list = []
-
+    for i in range(1,32):
+        if i not in list:
+            new_list.append(i)
+    return new_list
 
 list = [1, 2, 3, 5, 6, 7, 9, 11, 12, 23, 14, 15, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 31]
 print(missing_numbers(list))
