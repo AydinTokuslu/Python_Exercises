@@ -7,4 +7,10 @@
 # declare them a winner. After three wrong guesses, the code
 # should declare them a loser.
 
+from random import randint
+
 def guess_a_number():
+    guess = 0
+    random_num = randint(1,10)
+    while guess <= 3:
+        num = int(input("please enter a number : "))
