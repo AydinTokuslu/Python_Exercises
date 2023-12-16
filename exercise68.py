@@ -12,7 +12,8 @@ from random import randint
 def guess_a_number():
     guess = 0
     random_num = randint(1,10)
-    while guess <= 3:
+    print(random_num)
+    while guess < 3:
         num = int(input("please enter a number : "))
         guess += 1
         if num > random_num:
@@ -21,3 +22,10 @@ def guess_a_number():
             print("please enter a higher number")
         else:
             print("congratulations, you won")
+            break
+    if guess >= 3:
+        print("you lost it, try again")
+    else:
+        print("you are winner")
+
+guess_a_number()
