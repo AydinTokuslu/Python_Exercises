@@ -7,3 +7,4 @@
 # declare them a winner. After three wrong guesses, the code
 # should declare them a loser.
 
+def guess_a_number():
