@@ -6,3 +6,16 @@
 # value. When the user enters done, the function should return a
 # dictionary of names and values entered.
 
+def student_marks():
+    info = {}
+    while True:
+        name = input("please enter your name or done: ")
+        if name == "done":
+            break
+        marks =int(input("please enter your marks: "))
+        info[name]=marks
+        info[name]=int(info[name]) - marks
+    return info
+
+print(student_marks())
+
