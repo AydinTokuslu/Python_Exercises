@@ -26,12 +26,12 @@ def save_emails():
         with open("mail_records.txt", "a", encoding="utf-8") as file:
             file.write(email+" "+"\n")
             mail_list.append(file)
-            file.close()
             print(mail_list)
+            file.close()
 
 
 def open_emails():
-    with open("mail_records.txt","r", encoding="utf-8") as file:
+    with open("mail_records.txt", "r", encoding="utf-8") as file:
         records = file.readlines()
         print(records)
 
