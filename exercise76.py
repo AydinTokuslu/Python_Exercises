@@ -15,7 +15,7 @@ mail_list = []
 choice = input("""please neter your choice:
 1- enter mail
 2- display mail lists
-""")
+: """)
 
 
 def save_emails():
