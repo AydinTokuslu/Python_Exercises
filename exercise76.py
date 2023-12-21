@@ -31,7 +31,9 @@ def save_emails():
 
 
 def open_emails():
-    pass
+    with open("mail_records.txt","r", encoding="utf-8") as file:
+        records = file.readlines()
+        print(records)
 
 
 if choice == "1":
