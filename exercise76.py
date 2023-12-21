@@ -23,7 +23,7 @@ def save_emails():
         email = input("please enter your email : ")
         if email == "done":
             break
-        with open("mail_records.txt", "a", encoding="utf-9") as file:
+        with open("mail_records.txt", "a", encoding="utf-8") as file:
             file.write(email+" "+"\n")
             mail_list.append(file)
             file.close()
