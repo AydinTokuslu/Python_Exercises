@@ -32,7 +32,8 @@ def save_emails():
 
 def open_emails():
     with open("mail_records.txt", "r", encoding="utf-8") as file:
-        records = file.readlines()
+        #records = file.readlines()
+        records = file.read().split()
         print(records)
 
 
