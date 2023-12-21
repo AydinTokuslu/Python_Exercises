@@ -10,3 +10,7 @@
 # kate@yahoo.com
 # and not like this:
 # jj@gmail.comkate@yahoo.com
+
+def save_emails():
+
+
