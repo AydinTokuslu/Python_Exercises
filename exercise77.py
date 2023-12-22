@@ -26,7 +26,7 @@ def analyse_string(str):
     for word in words:
         total_char_count += len(word)
 
-    return f"special characters: {len(special_characters)},\nwords: {num_words},\ntotal characters: {total_char_count}"
+    return f"'special characters': {len(special_char)}, 'words': {num_words}, 'total characters': {total_char_count}"
 
 
 str = "Python has a string format operator %. This functions analogously to printf format strings in C, e.g. 'spam=%s eggs=%d' % ('blah', 2) evaluates to 'spam=blah eggs=2'."
