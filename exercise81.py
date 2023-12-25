@@ -6,3 +6,6 @@
 
 # names = {'name': 'Carol','sex': 'female','age': 55}
 
+import json
+
+names = {'name': 'Carol','sex': 'female','age': 55}
