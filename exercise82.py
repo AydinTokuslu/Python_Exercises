@@ -4,3 +4,8 @@
 # is being searched for. Use binary search (iterative Method).
 # list1 = [12, 34, 56, 78, 98, 22, 45, 13]
 
+
+
+list1 = [12, 34, 56, 78, 98, 22, 45, 13]
+list1 = sorted(list1)
+print(list1)
