@@ -27,3 +27,8 @@ def student_credits():
 
     with open("grades.txt","a", encoding="utf-8") as file:
         file.write("{} named student average note {}, and achieved grade is {}\n".format(name_surname, avr_note, letter_grade))
+        file.close()
+
+num_of_students = int(input("how many students information will you enter : "))
+for i in range(num_of_students):
+    student_credits()
