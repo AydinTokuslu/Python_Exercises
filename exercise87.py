@@ -8,7 +8,7 @@ atilcak_para_sayisi=int(input("kaç kere atmak istiyorsunuz : "))
 
 while atilcak_para_sayisi>0:
     para_ustu=random.choice(para_yuzeyi)
-    print(para_ustu)
+    #print(para_ustu)
     if para_ustu=="tura" or para_ustu=="Tura":
         tura+=1
         print("tura geldi!!")
