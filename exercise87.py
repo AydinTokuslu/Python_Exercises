@@ -17,4 +17,4 @@ while atilcak_para_sayisi>0:
         print("yazi geldi!!!")
     atilcak_para_sayisi-=1
 
-print("Tura sayısı : {}\nYazi sayısı : {}".format(yazi,tura))
+print("Tura sayısı : {}\nYazi sayısı : {}".format(tura,yazi))
