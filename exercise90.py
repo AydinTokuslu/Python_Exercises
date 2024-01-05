@@ -1,0 +1,1 @@
+## tam sayı bölenler
