@@ -23,6 +23,11 @@ if secim == "s":
         elif islem == 2:
             yatirilmek_istenen_tutar = int(input("Yatırmak istediğiniz para tutarını giriniz : "))
             sahip_olunan_para+=yatirilmek_istenen_tutar
+        elif islem == 3:
+            print("Hesap Bakiyeniz:\n*****Hesap Sahibi : Aydin T\nSahip olunan para miktarı: {}".format(sahip_olunan_para))
+        else:
+            print("Kartınız iade edilmektedir. Gene bekleriz.")
+            break
 
 else:
     print("ATM'den ayrıldınız")
