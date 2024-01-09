@@ -12,7 +12,7 @@ if secim == "s":
         3-Hesap Bakiyesi Gösterme
         4-Kart İadesi
         
-        
+        Yapmak istediğiniz işlemin numarasını giriniz : 
         """))
 
 else:
