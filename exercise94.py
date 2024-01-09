@@ -19,14 +19,13 @@ if secim == "s":
                 print("Bu işle  geçersizdir. Yeterli bakiyeniz bulunmamaktadır.")
             else:
                 sahip_olunan_para-=cekilmek_istenen_tutar
-                print("Hesabınıza {} tl para yatırılmıştır. Teşekkürler. Yeni Bakiyeniz : ".format(
-                    cekilmek_istenen_tutar, sahip_olunan_para))
+                print("Hesabınızdan {} tl para çekilmiştir. Teşekkürler. Yeni Bakiyeniz : ".format(cekilmek_istenen_tutar, sahip_olunan_para))
         elif islem == 2:
             yatirilmek_istenen_tutar = int(input("Yatırmak istediğiniz para tutarını giriniz : "))
             sahip_olunan_para+=yatirilmek_istenen_tutar
             print("Hesabınıza {} tl para yatırılmıştır. Teşekkürler. Yeni Bakiyeniz : ".format(yatirilmek_istenen_tutar, sahip_olunan_para))
         elif islem == 3:
-            print("Hesap Bakiyeniz:\n*****Hesap Sahibi : Aydin T\nSahip olunan para miktarı: {}".format(sahip_olunan_para))
+            print("Hesap Bakiyeniz:\n*****Hesap Sahibi : Aydin T*****\nSahip olunan para miktarı: {}".format(sahip_olunan_para))
         else:
             print("Kartınız iade edilmektedir. Gene bekleriz.")
             break
